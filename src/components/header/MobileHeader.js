@@ -1,0 +1,76 @@
+import Link from "next/link";
+
+import { useState } from "react";
+
+import { Other } from "./Menu";
+
+
+
+const MobileHeader = () => {
+
+  const [activeMenu, setActiveMenu] = useState("");
+
+  const activeMenuSet = (value) =>
+
+    setActiveMenu(activeMenu === value ? "" : value),
+
+    activeLi = (value) =>
+
+      value === activeMenu ? { display: "block" } : { display: "none" };
+
+  return (
+
+    <ul className="navigation clearfix d-block d-lg-none mobile-header">
+
+      <li>
+        <Link href="/">Pocetna</Link>
+      </li>
+
+      <li>
+
+        <Link href="/o-nama">O nama</Link>
+
+      </li>
+
+      <li>
+        <Link href="/poslovi">Poslovi</Link>
+      </li>
+
+      <li>
+        <Link href="/clanstvo">Clanstvo</Link>
+      </li>
+      <li>
+        <Link href="/kontakt">Kontakt</Link>
+      </li>
+
+      <li className="dropdown">
+
+        <a href="/faqs">Ostalo</a>
+
+        <ul style={activeLi("Ostalo")}>
+
+          <Other />
+
+        </ul>
+
+        <div className="dropdown-btn" onClick={() => activeMenuSet("Ostalo")}>
+
+          <span className="fas fa-chevron-down" />
+
+        </div>
+
+      </li>
+      <li>
+        <div className="slider-btns">
+          <a href="/poslovi" className="theme-btn style-four">
+            Za poslodavce <i className="fas fa-arrow-right" />
+          </a>
+        </div>
+      </li>
+
+    </ul>
+  );
+
+};
+
+export default MobileHeader;

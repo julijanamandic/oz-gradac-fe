@@ -1,0 +1,35 @@
+import { Accordion } from "react-bootstrap";
+
+const WellernAccordion = ({ title, eventName, children, active, onClick }) => {
+
+  return (
+
+    <div className="card">
+
+      <Accordion.Button
+
+        className={`card-header ${active !== eventName ? "collapsed" : ""}`}
+
+        eventKey={eventName}
+
+        onClick={() => onClick()}
+
+      >
+
+        {title} <span className="toggle-btn" />
+
+      </Accordion.Button>
+
+      <Accordion.Collapse eventKey={eventName}>
+
+        <div className="card-body">{children}</div>
+
+      </Accordion.Collapse>
+
+    </div>
+
+  );
+
+};
+
+export default WellernAccordion;
