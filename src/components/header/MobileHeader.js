@@ -45,7 +45,7 @@ const MobileHeader = () => {
 
       <li className="dropdown">
 
-        <a href="/faqs">Ostalo</a>
+        <Link href="/faqs">Ostalo</Link>
 
         <ul style={activeLi("Ostalo")}>
 
@@ -61,9 +61,9 @@ const MobileHeader = () => {
 
       </li>
       <li>
-        <div className="slider-btns">
+        <div className="slider-btns rm-10">
           <Link href="/za-poslodavce" className="theme-btn style-four">
-            Za poslodavce <i className="fas fa-arrow-right" />
+            ZA POSLODAVCE <i className="fas fa-arrow-right" />
           </Link>
         </div>
       </li>

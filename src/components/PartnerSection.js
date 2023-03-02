@@ -15,7 +15,15 @@ const PartnerSection = () => {
                                 <span className="sub-title-three">
                                     Globalni<span> Partneri</span>
                                 </span>
-                                <h2>We’ve More Then 235+ Global Partners</h2>
+                                <div className="hero-content">
+                                <h2>Uspesna saradnja</h2>
+                                <p>Izmedju <b>omladinske zadruge Gradac</b> i <b>Block Bar-a</b>.
+                                <br/> 
+                                Uz clansku kartu dobijate <b>10% popusta u Block Baru-u</b>
+                                </p>
+                                
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

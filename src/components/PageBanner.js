@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
-import banner from '../../public/assets/images/banner.jpg';
 import circleOne from '../../public/assets/images/shapes/circle-one.png';
 import circleTwo from '../../public/assets/images/shapes/circle-two.png';
 
@@ -11,16 +10,10 @@ const PageBanner = ({ pageTitle, pageName }) => {
     <section
 
       className="page-banner-area rel z-1 text-white text-center"
+      style={{ backgroundImage: "url(assets/images/banner.jpg)" }}
 
     >
-      <Image
-        src={banner}
-        alt="Banner"
-        layout="fill"
-        objectFit="cover"
-        priority
-      />
-
+      
       <div className="container">
 
         <div className="banner-inner rpt-10">

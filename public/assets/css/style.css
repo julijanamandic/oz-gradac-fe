@@ -536,8 +536,12 @@ a.theme-btn.style-three:hover {
 
 .theme-btn.style-four,
 a.theme-btn.style-four {
-  color: white;
+  color: white !important;
   background: #ffb113;
+}
+
+.mr {
+  width: 84%;
 }
 
 .theme-btn.style-four:hover,
@@ -10281,14 +10285,12 @@ blockquote .blockquote-footer:before {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: center;
 }
 
 @media only screen and (max-width: 991px) {
   .logo-inner {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
   }
 }
 
@@ -10319,7 +10321,6 @@ blockquote .blockquote-footer:before {
 .logo-inner.style-two {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: center;
 }
 
 /*******************************************************/
@@ -10595,7 +10596,6 @@ blockquote .blockquote-footer:before {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   position: relative;
   -webkit-transform: translateY(60px);
   -ms-transform: translateY(60px);
