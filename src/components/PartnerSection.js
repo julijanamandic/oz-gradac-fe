@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Image from "next/legacy/image";
 
-import logoBB from '../../public/assets/images/client-logos/logoBB.png';
+import logoBB from '../../public/assets/images/client-logos/logoBB.jpg';
 
 const PartnerSection = () => {
     return (
