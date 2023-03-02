@@ -1,8 +1,8 @@
 import Link from "next/link";
-
+import Image from "next/legacy/image";
 import Menus from "./Menus";
-
 import MobileHeader from "./MobileHeader";
+import logo from '../../../public/assets/images/logos/logo-two.png';
 
 const HeaderUpper = ({ navToggle, setNavToggle }) => {
 
@@ -21,14 +21,11 @@ const HeaderUpper = ({ navToggle, setNavToggle }) => {
 
                                 <a>
 
-                                    <img
-
-                                        src="assets/images/logos/logo-two.png"
-
+                                    <Image
+                                        src={logo}
                                         alt="Logo"
-
                                         title="Logo"
-
+                                        priority
                                     />
 
                                 </a>
@@ -53,14 +50,11 @@ const HeaderUpper = ({ navToggle, setNavToggle }) => {
 
                                         <a>
 
-                                            <img
-
-                                                src="assets/images/logos/logo-two.png"
-
+                                            <Image
+                                                src={logo}
                                                 alt="Logo"
-
                                                 title="Logo"
-
+                                                priority
                                             />
 
                                         </a>

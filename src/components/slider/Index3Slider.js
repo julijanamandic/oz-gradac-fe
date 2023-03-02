@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/legacy/image";
+import circleOne from '../../../public/assets/images/shapes/circle-one.png';
+import circleThree from '../../../public/assets/images/shapes/circle-three.png';
 
 const Index3Slider = () => {
+
   const [active, setActive] = useState(1);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -9,6 +14,7 @@ const Index3Slider = () => {
 
     return () => clearInterval(interval);
   }, [active]);
+
   console.log(active);
   return (
     <section className="slider-section bg-dark">
@@ -26,9 +32,9 @@ const Index3Slider = () => {
                 <h2>Trazis Posao? Na Pravom Si Mestu</h2>
               </div>
               <div className="slider-btns">
-                <a href="/poslovi" className="theme-btn style-four">
+                <Link href="/poslovi" className="theme-btn style-four">
                   Pogledaj Oglase <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -44,9 +50,9 @@ const Index3Slider = () => {
               </span>
               <h2>Trazis Posao? Na Pravom Si Mestu</h2>
               <div className="slider-btns">
-                <a href="/poslovi" className="theme-btn style-four">
+                <Link href="/poslovi" className="theme-btn style-four">
                   Pogledaj Oglase <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -62,9 +68,9 @@ const Index3Slider = () => {
               </span>
               <h2>Trazis Posao? Na Pravom Si Mestu</h2>
               <div className="slider-btns">
-                <a href="/poslovi" className="theme-btn style-four">
+                <Link href="/poslovi" className="theme-btn style-four">
                   Pogledaj Oglase <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -75,16 +81,20 @@ const Index3Slider = () => {
         <span className="separator">/</span>
         <span className="pagingCount">0{active}</span>
       </div>
-      <img
-        className="circle-two"
-        src="assets/images/shapes/circle-one.png"
-        alt="Circle"
-      />
-      <img
-        className="circle-one"
-        src="assets/images/shapes/circle-three.png"
-        alt="Circle"
-      />
+      <div className="circle-two">
+        <Image
+          src={circleOne}
+          alt="Circle"
+          priority
+        />
+      </div>
+      <div className="circle-one">
+        <Image
+          src={circleThree}
+          alt="Circle"
+          priority
+        />
+      </div>
     </section>
   );
 };

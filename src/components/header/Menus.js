@@ -57,7 +57,7 @@ const Menus = () => {
 
             <li className="dropdown">
 
-                <a href="/faqs">Ostalo</a>
+                <Link href="/faqs">Ostalo</Link>
 
                 <ul>
 

@@ -1,6 +1,8 @@
 import Link from "next/link";
-
-
+import Image from "next/legacy/image";
+import banner from '../../public/assets/images/banner.jpg';
+import circleOne from '../../public/assets/images/shapes/circle-one.png';
+import circleTwo from '../../public/assets/images/shapes/circle-two.png';
 
 const PageBanner = ({ pageTitle, pageName }) => {
 
@@ -10,9 +12,14 @@ const PageBanner = ({ pageTitle, pageName }) => {
 
       className="page-banner-area rel z-1 text-white text-center"
 
-      style={{ backgroundImage: "url(assets/images/banner.jpg)" }}
-
     >
+      <Image
+        src={banner}
+        alt="Banner"
+        layout="fill"
+        objectFit="cover"
+        priority
+      />
 
       <div className="container">
 
@@ -30,9 +37,9 @@ const PageBanner = ({ pageTitle, pageName }) => {
 
               <li className="breadcrumb-item">
 
-                <Link  href="/">
+                <Link href="/">
 
-                 Pocetna
+                  Pocetna
 
                 </Link>
 
@@ -48,25 +55,21 @@ const PageBanner = ({ pageTitle, pageName }) => {
 
       </div>
 
-      <img
+      <div className="circle-one">
+        <Image
+          src={circleOne}
+          alt="Circle"
+          priority
+        />
+      </div>
 
-        className="circle-one"
-
-        src="assets/images/shapes/circle-one.png"
-
-        alt="Circle"
-
-      />
-
-      <img
-
-        className="circle-two"
-
-        src="assets/images/shapes/circle-two.png"
-
-        alt="Circle"
-
-      />
+      <div className="circle-two">
+        <Image
+          src={circleTwo}
+          alt="Circle"
+          priority
+        />
+      </div>
 
     </section>
 

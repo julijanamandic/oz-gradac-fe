@@ -1,6 +1,10 @@
 import Link from "next/link";
+import Image from "next/legacy/image";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
+import coach1 from "../public/assets/images/coachs/coach1.jpg";
+import coach2 from "../public/assets/images/coachs/coach2.jpg";
+import coach3 from "../public/assets/images/coachs/coach3.jpg";
 
 const PostDetails = () => {
 
@@ -15,7 +19,10 @@ const PostDetails = () => {
                         <div className="col-lg-8">
                             <div className="blog-details-wrap">
                                 <div className="image mb-25 wow fadeInUp delay-0-2s">
-                                    <img src="assets/images/coachs/coach1.jpg" alt="Blog" />
+                                    <Image
+                                        src={coach1}
+                                        alt="Blog"
+                                        priority />
                                 </div>
                                 <ul className="blog-standard-header wow fadeInUp delay-0-2s">
                                     <li>
@@ -112,9 +119,10 @@ const PostDetails = () => {
                                     <ul>
                                         <li>
                                             <div className="image">
-                                                <img
-                                                    src="assets/images/coachs/coach1.jpg"
+                                                <Image
+                                                    src={coach1}
                                                     alt="Course"
+                                                    priority
                                                 />
                                             </div>
                                             <div className="content">
@@ -130,9 +138,10 @@ const PostDetails = () => {
                                         </li>
                                         <li>
                                             <div className="image">
-                                                <img
-                                                    src="assets/images/coachs/coach2.jpg"
+                                                <Image
+                                                    src={coach2}
                                                     alt="Course"
+                                                    priority
                                                 />
                                             </div>
                                             <div className="content">
@@ -148,9 +157,10 @@ const PostDetails = () => {
                                         </li>
                                         <li>
                                             <div className="image">
-                                                <img
-                                                    src="assets/images/coachs/coach3.jpg"
+                                                <Image
+                                                    src={coach3}
                                                     alt="Course"
+                                                    priority
                                                 />
                                             </div>
                                             <div className="content">
@@ -166,9 +176,10 @@ const PostDetails = () => {
                                         </li>
                                         <li>
                                             <div className="image">
-                                                <img
-                                                    src="assets/images/coachs/coach1.jpg"
+                                                <Image
+                                                    src={coach1}
                                                     alt="Course"
+                                                    priority
                                                 />
                                             </div>
                                             <div className="content">
@@ -184,9 +195,10 @@ const PostDetails = () => {
                                         </li>
                                         <li>
                                             <div className="image">
-                                                <img
-                                                    src="assets/images/coachs/coach2.jpg"
+                                                <Image
+                                                    src={coach2}
                                                     alt="Course"
+                                                    priority
                                                 />
                                             </div>
                                             <div className="content">

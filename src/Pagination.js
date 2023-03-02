@@ -4,7 +4,9 @@ import { getPagination, pagination } from "./utils";
 
 const Pagination = ({ paginationCls, sort }) => {
 
-  let defaultSort = sort ? sort : 3;
+  const defaultSort = sort ? sort : 3;
+  
+  const pagCls = paginationCls;
 
   const [active, setActive] = useState(1);
 
@@ -12,9 +14,9 @@ const Pagination = ({ paginationCls, sort }) => {
 
   useEffect(() => {
 
-    pagination(paginationCls, defaultSort, active);
+    pagination(pagCls, defaultSort, active);
 
-    let list = document.querySelectorAll(paginationCls);
+    let list = document.querySelectorAll(pagCls);
 
     setstate(getPagination(list.length, defaultSort));
 

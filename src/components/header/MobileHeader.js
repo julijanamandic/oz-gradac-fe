@@ -62,9 +62,9 @@ const MobileHeader = () => {
       </li>
       <li>
         <div className="slider-btns">
-          <a href="/poslovi" className="theme-btn style-four">
+          <Link href="/za-poslodavce" className="theme-btn style-four">
             Za poslodavce <i className="fas fa-arrow-right" />
-          </a>
+          </Link>
         </div>
       </li>
 
