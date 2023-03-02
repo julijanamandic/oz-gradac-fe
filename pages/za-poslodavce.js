@@ -1,9 +1,12 @@
 import Layout from "@/src/layout/Layout";
+import Image from "next/legacy/image";
 import PageBanner from "@/src/components/PageBanner";
-import Link from "next/link";
-import Application from "../src/components/Application";
 import { Nav, Tab } from "react-bootstrap";
 import EmploymentApplication from "@/src/components/EmploymentApplication";
+
+import benefit from '../public/assets/images/about/benefit.jpg';
+import gallery6 from '../public/assets/images/gallery/gallery6.jpg';
+import whyChoose2 from '../public/assets/images/why-choose/why-choose2.jpg';
 
 const ForEmployment = () => {
     return (
@@ -13,7 +16,7 @@ const ForEmployment = () => {
 
                 <div className="container">
 
-                    <div className="section-title text-center mb-50">
+                    <div className="section-title mb-50">
 
                         <span className="sub-title-two">
                             Trazite radnike<span> preko omladinske zadruge?</span>
@@ -30,7 +33,11 @@ const ForEmployment = () => {
 
                             <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s">
 
-                                <img src="assets/images/about/benefit.jpg" alt="Bebefit" />
+                                <Image
+                                    src={benefit}
+                                    alt="Bebefit"
+                                    priority
+                                />
                             </div>
 
                         </div>
@@ -95,16 +102,20 @@ const ForEmployment = () => {
                         </div>
                         <div className="col-lg-5">
                             <div className="why-choose-images mt-10 wow fadeInUp delay-0-4s">
-                                <img
-                                    src="assets/images/gallery/gallery6.jpg"
-                                    alt="Why Choose"
-                                    className="why-choose-one"
-                                />
-                                <img
-                                    src="assets/images/why-choose/why-choose2.jpg"
-                                    alt="Why Choose"
-                                    className="why-choose-two"
-                                />
+                                <div className="why-choose-one">
+                                    <Image
+                                        src={gallery6}
+                                        alt="Why Choose"
+                                        priority
+                                    />
+                                </div>
+                                <div className="why-choose-two">
+                                    <Image
+                                        src={whyChoose2}
+                                        alt="Why Choose"
+                                        priority
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

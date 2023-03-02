@@ -1,3 +1,6 @@
+import Image from "next/legacy/image";
+import rulesCondition1 from '../../../public/assets/images/about/rules-condition1.jpg';
+import rulesConditio2 from '../../../public/assets/images/about/rules-condition2.jpg';
 
 const RulesAndConditions = () => {
 
@@ -40,20 +43,19 @@ const RulesAndConditions = () => {
                         <div className="rules-condition-image-part wow fadeInRight delay-0-2s">
                             <div className="row align-items-center">
                                 <div className="col-7">
-                                    <img
-                                        src="assets/images/about/rules-condition1.jpg"
+                                    <Image
+                                        src={rulesCondition1}
                                         alt="Rules"
+                                        priority
                                     />
                                 </div>
                                 <div className="col-5">
-                                    <img
-                                        src="assets/images/about/rules-condition2.jpg"
+                                    <Image
+                                        src={rulesConditio2}
                                         alt="Rules"
+                                        priority
                                     />
                                 </div>
-                            </div>
-                            <div className="logo">
-                                <img src="assets/images/logos/logo.png" alt="Logo" />
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,9 @@
+import Image from 'next/legacy/image';
+
+import aboutThree from '../../../public/assets/images/about/about-three.jpg';
+
+import aboutThreeIcon from '../../../public/assets/images/about/about-three-icon.png';
+
 const About = () => {
     return (
         <section className="about-section-three pt-90 rpt-70">
@@ -5,11 +11,17 @@ const About = () => {
                 <div className="row large-gap align-items-center">
                     <div className="col-lg-6">
                         <div className="about-three-image rmb-65 wow fadeInUp delay-0-2s">
-                            <img src="assets/images/about/about-three.jpg" alt="About" />
+                            <Image
+                                src={aboutThree}
+                                alt="About"
+                                layout='responsive'
+                                priority
+                            />
                             <div className="about-three-image-content bg-light-blue rel text-white br-10">
-                                <img
-                                    src="assets/images/about/about-three-icon.png"
-                                    alt="Icon"
+                                <Image
+                                    src={aboutThreeIcon}
+                                    alt="About icon"
+                                    priority
                                 />
                                 <span className="counter-number">
                                     <span />

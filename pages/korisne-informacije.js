@@ -1,6 +1,11 @@
 import Link from "next/link";
+import Image from "next/legacy/image";
 import Layout from "@/src/layout/Layout";
 import PageBanner from "@/src/components/PageBanner";
+
+import blog4 from '../public/assets/images/blog/blog4.jpg';
+import blog5 from '../public/assets/images/blog/blog5.jpg';
+import blog6 from '../public/assets/images/blog/blog6.jpg';
 
 const Informations = () => {
 
@@ -16,9 +21,13 @@ const Informations = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="blog-item style-two wow fadeInUp delay-0-2s">
                                 <div className="blog-image">
-                                    <img src="assets/images/blog/blog4.jpg" alt="Blog" />
+                                    <Image
+                                        src={blog4}
+                                        alt="Blog"
+                                        priority
+                                    />
                                     <span className="date">
-                                        March <span>15</span>
+                                        Mart <span>15</span>
                                     </span>
                                 </div>
                                 <div className="blog-content">
@@ -44,9 +53,13 @@ const Informations = () => {
                         <div className="col-lg-8">
                             <div className="blog-item style-two image-left wow fadeInUp delay-0-4s">
                                 <div className="blog-image">
-                                    <img src="assets/images/blog/blog5.jpg" alt="Blog" />
+                                    <Image
+                                        src={blog5}
+                                        alt="Blog"
+                                        priority
+                                    />
                                     <span className="date">
-                                        March <span>23</span>
+                                        Mart <span>23</span>
                                     </span>
                                 </div>
                                 <div className="blog-content">
@@ -70,7 +83,11 @@ const Informations = () => {
                             </div>
                             <div className="blog-item style-two image-left wow fadeInUp delay-0-6s">
                                 <div className="blog-image">
-                                    <img src="assets/images/blog/blog6.jpg" alt="Blog" />
+                                    <Image
+                                        src={blog6}
+                                        alt="Blog"
+                                        priority
+                                    />
                                     <span className="date">
                                         April <span>04</span>
                                     </span>

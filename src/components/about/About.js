@@ -1,4 +1,8 @@
 import Counter from "../Counter";
+import Image from "next/legacy/image";
+import joinTeam1 from './../../../public/assets/images/instructor/join-team1.jpg';
+import joinTeam2 from './../../../public/assets/images/instructor/join-team2.jpg';
+import joinTeam3 from './../../../public/assets/images/instructor/join-team3.jpg';
 
 const About = () => {
 
@@ -46,11 +50,11 @@ const About = () => {
 
                             <div className="image-one">
 
-                                <img
+                                <Image
 
-                                    src="assets/images/instructor/join-team1.jpg"
-
+                                    src={joinTeam1}
                                     alt="Join Our Team"
+                                    priority
 
                                 />
 
@@ -58,20 +62,18 @@ const About = () => {
 
                             <div className="image-two">
 
-                                <img
+                                <Image
 
-                                    src="assets/images/instructor/join-team2.jpg"
-
+                                    src={joinTeam2}
                                     alt="Join Our Team"
-
+                                    priority
                                 />
 
-                                <img
+                                <Image
 
-                                    src="assets/images/instructor/join-team3.jpg"
-
+                                    src={joinTeam3}
                                     alt="Join Our Team"
-
+                                    priority
                                 />
 
                             </div>
@@ -83,8 +85,6 @@ const About = () => {
                                 <span>Godine Iskustava</span>
 
                             </div>
-
-                            <span className="bg-text">coach</span>
 
                         </div>
 
@@ -170,7 +170,7 @@ const About = () => {
 
                                 </span>
 
-                                <span>Awards Winning</span>
+                                <span>Poslodavaca</span>
 
                             </div>
 

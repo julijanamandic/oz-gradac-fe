@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { validateEmail } from "../util/helpers";
 import { toast } from 'react-toastify';
+import Image from "next/legacy/image";
+import footerVideoBg from '../../public/assets/images/video/footer-video-bg.jpg';
 
 const Newsletters = () => {
 
@@ -67,13 +69,14 @@ const Newsletters = () => {
 
             className="newsletter-video bgs-cover overlay wow fadeInLeft delay-0-2s"
 
-            style={{
-
-              backgroundImage: "url(assets/images/video/footer-video-bg.jpg)",
-
-            }}
-
           >
+            <Image
+              src={footerVideoBg}
+              alt="Newsletter"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
 
           </div>
 

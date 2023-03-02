@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+import Image from "next/legacy/image";
+
+import notification from '../../../public/assets/images/shapes/notification.png';
+
 const CallTo = () => {
 
     return (
@@ -9,9 +13,10 @@ const CallTo = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-8">
                             <div className="notification rmb-25">
-                                <img
-                                    src="assets/images/shapes/notification.png"
+                                <Image
+                                    src={notification}
                                     alt="Notification"
+                                    priority
                                 />
                                 <div className="content">
                                     <h4>Trazis posao?</h4>

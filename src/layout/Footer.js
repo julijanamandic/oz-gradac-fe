@@ -1,18 +1,13 @@
 import Link from "next/link";
-
+import Image from "next/legacy/image";
 import Newsletters from "../components/Newsletters";
-
 import Contact from "./footer/Contact";
-
 import Gallery from "./footer/Gallery";
-
 import Links from "./footer/Links";
-
 import FollowIcon from "./footer/FollowIcon";
-
 import CopyRight from "./footer/CopyRight";
-
 import FooterBottom from "./footer/FooterBottom";
+import logo from '../../public/assets/images/logos/logo-one.png';
 
 
 const Footer = ({ footer }) => {
@@ -24,7 +19,7 @@ const Footer = ({ footer }) => {
   };
 
   return (
-    
+
     <footer className="main-footer footer-two bg-blue-two">
 
       <div className="container">
@@ -43,7 +38,12 @@ const Footer = ({ footer }) => {
 
                   <a>
 
-                    <img src="assets/images/logos/logo-two.png" alt="Logo" />
+                    <Image
+                      src={logo}
+                      alt="Logo"
+                      height={90}
+                      width={90}
+                    />
 
                   </a>
 

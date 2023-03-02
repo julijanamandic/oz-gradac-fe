@@ -13241,12 +13241,6 @@ blockquote .blockquote-footer:before {
   padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 1500px) {
-  .why-choose-images {
-    margin-right: 0;
-    margin-left: 12%;
-  }
-}
 
 .why-choose-images .circle,
 .why-choose-images .why-choose-three {

@@ -1,6 +1,12 @@
 import Slider from "react-slick";
+
 import Post from "./Post";
-import { index2Course, testimonialthree } from "../../sliderProps";
+
+import { index2Course } from "../../sliderProps";
+
+import coach1 from "../../../public/assets/images/coachs/coach1.jpg";
+import coach2 from "../../../public/assets/images/coachs/coach2.jpg";
+import coach3 from "../../../public/assets/images/coachs/coach3.jpg";
 
 const PostList = () => {
 
@@ -12,7 +18,7 @@ const PostList = () => {
                 price="400 din/h"
                 workTime="5 dana u nedelji"
                 location="Beograd"
-                img="assets/images/coachs/coach1.jpg"
+                img={coach1}
             />
 
             <Post category="Sourcing"
@@ -20,7 +26,7 @@ const PostList = () => {
                 price="2$ po satu"
                 workTime="5 dana 4 sata"
                 location="Beograd"
-                img="assets/images/coachs/coach2.jpg"
+                img={coach2}
             />
 
             <Post category="Ugostiteljstvo"
@@ -28,7 +34,7 @@ const PostList = () => {
                 price="6 sati 1500 din"
                 workTime="fleksibilno"
                 location="Beograd"
-                img="assets/images/coachs/coach3.jpg"
+                img={coach3}
             />
 
             <Post category="Administracija"
@@ -36,7 +42,7 @@ const PostList = () => {
                 price="250 din/h"
                 workTime="7:30 - 15:30"
                 location="Beograd"
-                img="assets/images/coachs/coach1.jpg"
+                img={coach1}
             />
 
             <Post category="Sourcing"
@@ -44,7 +50,7 @@ const PostList = () => {
                 price="400 din/h"
                 workTime="Radni dani 08-16h"
                 location="Beograd (Merkator)"
-                img="assets/images/coachs/coach2.jpg"
+                img={coach2}
             />
 
             <Post category="Ugostiteljstvo"
@@ -52,7 +58,7 @@ const PostList = () => {
                 price="256"
                 workTime="svaki dan"
                 location="Beograd"
-                img="assets/images/coachs/coach3.jpg" />
+                img={coach3} />
         </Slider>
     )
 }

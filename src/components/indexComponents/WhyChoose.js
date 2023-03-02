@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+import Image from "next/legacy/image";
+
+import whyChoose1 from '../../../public/assets/images/why-choose/why-choose1.jpg';
+
+import whyChoose2 from '../../../public/assets/images/why-choose/why-choose2.jpg';
+
+import whyChoose3 from '../../../public/assets/images/why-choose/why-choose3.jpg';
+
 const WhyChoose = () => {
 
     return (
@@ -32,21 +40,27 @@ const WhyChoose = () => {
                     </div>
                     <div className="col-lg-5">
                         <div className="why-choose-images mt-10 wow fadeInUp delay-0-4s">
-                            <img
-                                src="assets/images/why-choose/why-choose1.jpg"
-                                alt="Why Choose"
-                                className="why-choose-one"
-                            />
-                            <img
-                                src="assets/images/why-choose/why-choose2.jpg"
-                                alt="Why Choose"
-                                className="why-choose-two"
-                            />
-                            <img
-                                src="assets/images/why-choose/why-choose3.jpg"
-                                alt="Why Choose"
-                                className="why-choose-three"
-                            />
+                            <div className="why-choose-one">
+                                <Image
+                                    src={whyChoose1}
+                                    alt="Why Choose"
+                                    priority
+                                />
+                            </div>
+                            <div className="why-choose-two">
+                                <Image
+                                    src={whyChoose2}
+                                    alt="Why Choose"
+                                    priority
+                                />
+                            </div>
+                            <div className="why-choose-three">
+                                <Image
+                                    src={whyChoose3}
+                                    alt="Why Choose"
+                                    priority
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

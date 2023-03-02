@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Image from "next/legacy/image";
+
 const Post = ({ title, price, workTime, location, img, category }) => {
     return (
         <div className="coach-item wow fadeInUp delay-0-4s">
@@ -12,11 +14,14 @@ const Post = ({ title, price, workTime, location, img, category }) => {
 
                 </Link>
 
-                <img
+                <Image
 
                     src={img}
 
                     alt="Coach"
+
+                    priority
+                    layout="responsive"
 
                 />
 

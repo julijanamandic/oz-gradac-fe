@@ -1,4 +1,10 @@
-
+import Image from "next/legacy/image";
+import gallery1 from '../../../public/assets/images/widgets/gallery1.jpg';
+import gallery2 from '../../../public/assets/images/widgets/gallery2.jpg';
+import gallery3 from '../../../public/assets/images/widgets/gallery3.jpg';
+import gallery4 from '../../../public/assets/images/widgets/gallery4.jpg';
+import gallery5 from '../../../public/assets/images/widgets/gallery5.jpg';
+import gallery6 from '../../../public/assets/images/widgets/gallery6.jpg';
 
 const Gallery = () => {
 
@@ -13,37 +19,61 @@ const Gallery = () => {
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery1.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery1}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery2.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery2}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery3.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery3}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery4.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery4}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery5.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery5}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 
                     <div className="gallery-widget-item">
 
-                        <img src="assets/images/widgets/gallery6.jpg" alt="Gallery" />
+                        <Image
+                            src={gallery6}
+                            alt="Gallery"
+                            priority
+                        />
 
                     </div>
 

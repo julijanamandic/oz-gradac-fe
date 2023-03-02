@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+import Image from "next/legacy/image";
+
+import logoBB from '../../public/assets/images/client-logos/logoBB.png';
+
 const PartnerSection = () => {
     return (
         <section className="partner-section rel z-1 pt-75 rpt-75 pb-75 rpb-55">
@@ -19,9 +23,10 @@ const PartnerSection = () => {
                         <div className="logo-inner style-two wow fadeInLeft delay-0-2s">
                             <div className="logo-item">
                                 <Link href="/about">
-                                    <img
-                                        src="assets/images/client-logos/logoBB.png"
+                                    <Image
+                                        src={logoBB}
                                         alt="Client Logo"
+                                        priority
                                     />
                                 </Link>
                             </div>

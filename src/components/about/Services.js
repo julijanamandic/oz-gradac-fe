@@ -1,8 +1,10 @@
+import Image from "next/legacy/image";
+import benefit from '../../../public/assets/images/about/benefit.jpg';
 
 const Services = () => {
 
     return (
-        
+
         <section className="benefit-work-process rel z-2 pt-120 rpt-90 pb-120 rpb-90">
 
             <div className="container">
@@ -23,7 +25,11 @@ const Services = () => {
 
                         <div className="bebefit-image rmb-75 wow fadeInRight delay-0-2s">
 
-                            <img src="assets/images/about/benefit.jpg" alt="Bebefit" />
+                            <Image
+                                src={benefit}
+                                alt="Benefit"
+                                priority
+                            />
 
                         </div>
 

@@ -1,8 +1,11 @@
 import Link from "next/link";
+import Image from "next/legacy/image";
+import benefit from '../../../public/assets/images/about/benefit.jpg';
 
 const Contact = () => {
 
     return (
+
         <section className="faq-form-area rel z-1 pb-125 rpb-95">
 
             <div className="container">
@@ -42,9 +45,13 @@ const Contact = () => {
 
                     </div>
 
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 wow fadeInLeft delay-0-2s">
 
-                        <img src="assets/images/about/benefit.jpg" alt="Bebefit" />
+                        <Image
+                            src={benefit}
+                            alt="Bebefit"
+                            priority
+                        />
 
                     </div>
 
